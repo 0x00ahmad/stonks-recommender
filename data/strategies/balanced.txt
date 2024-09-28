@@ -1,0 +1,12 @@
+This conservative trading strategy prioritizes capital preservation and steady growth over high-risk, high-reward opportunities. Key points:
+
+1. Focus on long-term trends rather than short-term fluctuations
+2. Prioritize assets with stable histories and strong fundamentals
+3. Implement wider stop-losses to avoid premature exits due to market noise
+4. Prefer dividend-paying stocks or carry trades in forex
+5. Diversify positions to spread risk
+6. Avoid excessive leverage
+7. Look for value investing opportunities in stocks
+8. In forex, focus on major currency pairs with lower volatility
+
+When applying this strategy, lean towards more cautious actions, with a preference for holding positions unless there's a strong indication to buy or sell.

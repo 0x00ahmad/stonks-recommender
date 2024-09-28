@@ -1,0 +1,18 @@
+[
+  {
+    "sentiment": {
+      "sentiment": "neutral",
+      "confidence": 0.75,
+      "intent": "MSFT shows balanced volatility and stable trading amid strong tech sector. Market shakes post-Fed comments; mixed analyst ratings. Recent earnings meet expectations; AI focus continues. Institutional support steady."
+    },
+    "timestamp": "2024-09-28T19:15:14.829001"
+  },
+  {
+    "sentiment": {
+      "sentiment": "neutral",
+      "confidence": 0.75,
+      "intent": "Steady trading seen with minor fluctuations. No major news affecting MSFT. Tech sector stable. Mixed analyst views but overall bullish. Institutional buying solid but lacking momentum. Indicators suggest consolidation."
+    },
+    "timestamp": "2024-09-28T19:35:23.831713"
+  }
+]

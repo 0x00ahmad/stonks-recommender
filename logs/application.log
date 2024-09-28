@@ -1,0 +1,358 @@
+2024-09-28 14:47:56,663 - __main__ - INFO - Calling main
+2024-09-28 14:47:56,663 - __main__ - INFO - Starting the application
+2024-09-28 14:47:56,670 - __main__ - DEBUG - Loaded 3 strategies
+2024-09-28 14:48:00,130 - src.application.sentiment_analyzer - INFO - Calling analyze_sentiment
+2024-09-28 14:48:00,131 - src.application.sentiment_analyzer - INFO - Analyzing sentiment for AAPL
+2024-09-28 14:48:00,133 - src.application.sentiment_analyzer - DEBUG - Prompt: You are an expert financial analyst with deep knowledge of both stock markets. Your task is to analyze the current sentiment for the AAPL AssetType.STOCK over the 45 minutes time frame.
+
+You have to check the investopedia and yahoo finance for the latest news and trends related to this stock in 2024-09-28.
+
+Consider the following factors in your analysis:
+
+1. Recent price movements
+2. Trading volume
+3. Relevant news and events
+4. Market trends
+5. Economic indicators (if applicable)
+6. Technical analysis patterns
+
+Based on these factors, determine whether the overall sentiment for AAPL is positive, neutral, or negative.
+
+Provide your analysis in the following format:
+SENTIMENT: [POSITIVE/NEUTRAL/NEGATIVE]
+
+Remember, only output the sentiment as either POSITIVE, NEUTRAL, or NEGATIVE. Do not provide any additional explanation or analysis.
+
+2024-09-28 14:48:01,164 - src.application.sentiment_analyzer - DEBUG - Sentiment: Sentiment.NEUTRAL
+2024-09-28 14:48:01,165 - src.application.sentiment_analyzer - INFO - analyze_sentiment completed successfully
+2024-09-28 14:48:01,166 - src.application.recommendation_engine - INFO - Calling get_recommendation
+2024-09-28 14:48:01,166 - src.application.recommendation_engine - INFO - Preparing to generate recommendation
+2024-09-28 14:48:01,167 - src.data.external.fetcher - DEBUG - Calling fetch_asset_data
+2024-09-28 14:48:01,167 - src.data.external.fetcher - INFO - Fetching stock data for AAPL
+2024-09-28 14:48:01,676 - src.data.external.fetcher - ERROR - Error in fetch_asset_data: 1 validation error for CompanyProfile
+shares_outstanding
+  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=15204.14, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.9/v/int_from_float
+2024-09-28 14:48:01,678 - src.application.recommendation_engine - ERROR - Error in get_recommendation: 1 validation error for CompanyProfile
+shares_outstanding
+  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=15204.14, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.9/v/int_from_float
+2024-09-28 14:48:01,678 - __main__ - ERROR - Error in main: 1 validation error for CompanyProfile
+shares_outstanding
+  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=15204.14, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.9/v/int_from_float
+2024-09-28 14:48:46,436 - __main__ - INFO - Calling main
+2024-09-28 14:48:46,436 - __main__ - INFO - Starting the application
+2024-09-28 14:48:46,443 - __main__ - DEBUG - Loaded 3 strategies
+2024-09-28 14:48:52,494 - src.application.sentiment_analyzer - INFO - Calling analyze_sentiment
+2024-09-28 14:48:52,495 - src.application.sentiment_analyzer - INFO - Analyzing sentiment for FB
+2024-09-28 14:48:52,497 - src.application.sentiment_analyzer - DEBUG - Prompt: You are an expert financial analyst with deep knowledge of both stock markets. Your task is to analyze the current sentiment for the FB AssetType.STOCK over the 30 minutes time frame.
+
+You have to check the investopedia and yahoo finance for the latest news and trends related to this stock in 2024-09-28.
+
+Consider the following factors in your analysis:
+
+1. Recent price movements
+2. Trading volume
+3. Relevant news and events
+4. Market trends
+5. Economic indicators (if applicable)
+6. Technical analysis patterns
+
+Based on these factors, determine whether the overall sentiment for FB is positive, neutral, or negative.
+
+Provide your analysis in the following format:
+SENTIMENT: [POSITIVE/NEUTRAL/NEGATIVE]
+
+Remember, only output the sentiment as either POSITIVE, NEUTRAL, or NEGATIVE. Do not provide any additional explanation or analysis.
+
+2024-09-28 14:48:53,490 - src.application.sentiment_analyzer - DEBUG - Sentiment: Sentiment.NEUTRAL
+2024-09-28 14:48:53,490 - src.application.sentiment_analyzer - INFO - analyze_sentiment completed successfully
+2024-09-28 14:48:53,491 - src.application.recommendation_engine - INFO - Calling get_recommendation
+2024-09-28 14:48:53,491 - src.application.recommendation_engine - INFO - Preparing to generate recommendation
+2024-09-28 14:48:53,491 - src.data.external.fetcher - DEBUG - Calling fetch_asset_data
+2024-09-28 14:48:53,491 - src.data.external.fetcher - INFO - Fetching stock data for FB
+2024-09-28 14:48:56,848 - src.data.external.fetcher - ERROR - Error in fetch_asset_data: 2 validation errors for StockQuote
+change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+percent_change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+2024-09-28 14:48:56,851 - src.application.recommendation_engine - ERROR - Error in get_recommendation: 2 validation errors for StockQuote
+change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+percent_change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+2024-09-28 14:48:56,851 - __main__ - ERROR - Error in main: 2 validation errors for StockQuote
+change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+percent_change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+2024-09-28 14:50:04,601 - __main__ - INFO - Calling main
+2024-09-28 14:50:04,601 - __main__ - INFO - Starting the application
+2024-09-28 14:50:04,608 - __main__ - DEBUG - Loaded 3 strategies
+2024-09-28 14:50:06,793 - src.application.sentiment_analyzer - INFO - Calling analyze_sentiment
+2024-09-28 14:50:06,793 - src.application.sentiment_analyzer - INFO - Analyzing sentiment for FB
+2024-09-28 14:50:06,796 - src.application.sentiment_analyzer - DEBUG - Prompt: You are an expert financial analyst with deep knowledge of both stock markets. Your task is to analyze the current sentiment for the FB AssetType.STOCK over the 1 hour time frame.
+
+You have to check the investopedia and yahoo finance for the latest news and trends related to this stock in 2024-09-28.
+
+Consider the following factors in your analysis:
+
+1. Recent price movements
+2. Trading volume
+3. Relevant news and events
+4. Market trends
+5. Economic indicators (if applicable)
+6. Technical analysis patterns
+
+Based on these factors, determine whether the overall sentiment for FB is positive, neutral, or negative.
+
+Provide your analysis in the following format:
+SENTIMENT: [POSITIVE/NEUTRAL/NEGATIVE]
+
+Remember, only output the sentiment as either POSITIVE, NEUTRAL, or NEGATIVE. Do not provide any additional explanation or analysis.
+
+2024-09-28 14:50:07,851 - src.application.sentiment_analyzer - DEBUG - Sentiment: Sentiment.NEUTRAL
+2024-09-28 14:50:07,851 - src.application.sentiment_analyzer - INFO - analyze_sentiment completed successfully
+2024-09-28 14:50:07,852 - src.application.recommendation_engine - INFO - Calling get_recommendation
+2024-09-28 14:50:07,852 - src.application.recommendation_engine - INFO - Preparing to generate recommendation
+2024-09-28 14:50:07,852 - src.data.external.fetcher - DEBUG - Calling fetch_asset_data
+2024-09-28 14:50:07,852 - src.data.external.fetcher - INFO - Fetching stock data for FB
+2024-09-28 14:50:07,853 - src.data.external.fetcher - DEBUG - Fetching quote for FB
+2024-09-28 14:50:11,267 - src.data.external.fetcher - DEBUG - Quote data: {'c': 0, 'd': None, 'dp': None, 'h': 0, 'l': 0, 'o': 0, 'pc': 0, 't': 0}
+2024-09-28 14:50:11,269 - src.data.external.fetcher - ERROR - Error in fetch_asset_data: 2 validation errors for StockQuote
+change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+percent_change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+2024-09-28 14:50:11,271 - src.application.recommendation_engine - ERROR - Error in get_recommendation: 2 validation errors for StockQuote
+change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+percent_change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+2024-09-28 14:50:11,271 - __main__ - ERROR - Error in main: 2 validation errors for StockQuote
+change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+percent_change
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/float_type
+2024-09-28 14:51:03,673 - __main__ - INFO - Calling main
+2024-09-28 14:51:03,673 - __main__ - INFO - Starting the application
+2024-09-28 14:51:03,679 - __main__ - DEBUG - Loaded 3 strategies
+2024-09-28 14:51:06,461 - src.application.sentiment_analyzer - INFO - Calling analyze_sentiment
+2024-09-28 14:51:06,462 - src.application.sentiment_analyzer - INFO - Analyzing sentiment for TSLA
+2024-09-28 14:51:06,464 - src.application.sentiment_analyzer - DEBUG - Prompt: You are an expert financial analyst with deep knowledge of both stock markets. Your task is to analyze the current sentiment for the TSLA AssetType.STOCK over the 30 minutes time frame.
+
+You have to check the investopedia and yahoo finance for the latest news and trends related to this stock in 2024-09-28.
+
+Consider the following factors in your analysis:
+
+1. Recent price movements
+2. Trading volume
+3. Relevant news and events
+4. Market trends
+5. Economic indicators (if applicable)
+6. Technical analysis patterns
+
+Based on these factors, determine whether the overall sentiment for TSLA is positive, neutral, or negative.
+
+Provide your analysis in the following format:
+SENTIMENT: [POSITIVE/NEUTRAL/NEGATIVE]
+
+Remember, only output the sentiment as either POSITIVE, NEUTRAL, or NEGATIVE. Do not provide any additional explanation or analysis.
+
+2024-09-28 14:51:07,280 - src.application.sentiment_analyzer - DEBUG - Sentiment: Sentiment.NEUTRAL
+2024-09-28 14:51:07,280 - src.application.sentiment_analyzer - INFO - analyze_sentiment completed successfully
+2024-09-28 14:51:07,280 - src.application.recommendation_engine - INFO - Calling get_recommendation
+2024-09-28 14:51:07,280 - src.application.recommendation_engine - INFO - Preparing to generate recommendation
+2024-09-28 14:51:07,281 - src.data.external.fetcher - DEBUG - Calling fetch_asset_data
+2024-09-28 14:51:07,281 - src.data.external.fetcher - INFO - Fetching stock data for TSLA
+2024-09-28 14:51:07,281 - src.data.external.fetcher - DEBUG - Fetching quote for TSLA
+2024-09-28 14:51:07,556 - src.data.external.fetcher - DEBUG - Quote data: {'c': 260.46, 'd': 6.24, 'dp': 2.4546, 'h': 260.6999, 'l': 254.12, 'o': 257.375, 'pc': 254.22, 't': 1727481600}
+2024-09-28 14:51:07,556 - src.data.external.fetcher - DEBUG - Fetching company profile for TSLA
+2024-09-28 14:51:07,849 - src.data.external.fetcher - DEBUG - Company profile data: {'country': 'US', 'currency': 'USD', 'estimateCurrency': 'USD', 'exchange': 'NASDAQ NMS - GLOBAL MARKET', 'finnhubIndustry': 'Automobiles', 'ipo': '2013-03-06', 'logo': 'https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/TSLA.png', 'marketCapitalization': 832076.0375942889, 'name': 'Tesla Inc', 'phone': '15125168177', 'shareOutstanding': 3189.2, 'ticker': 'TSLA', 'weburl': 'https://www.tesla.com/'}
+2024-09-28 14:51:07,850 - src.data.external.fetcher - DEBUG - fetch_asset_data completed successfully
+2024-09-28 14:51:07,851 - src.data.repository.asset_data - DEBUG - Calling save_asset_data
+2024-09-28 14:51:07,852 - src.data.repository.asset_data - DEBUG - Saving asset data for TSLA
+2024-09-28 14:51:07,854 - src.data.repository.asset_data - DEBUG - save_asset_data completed successfully
+2024-09-28 14:51:07,857 - src.data.repository.sentiment - DEBUG - Calling get_sentiment_history
+2024-09-28 14:51:07,857 - src.data.repository.sentiment - DEBUG - Getting sentiment history for TSLA
+2024-09-28 14:51:07,857 - src.data.repository.sentiment - DEBUG - get_sentiment_history completed successfully
+2024-09-28 14:51:07,858 - src.application.recommendation_engine - DEBUG - - - - Formatted prompt - - -
+As an expert financial advisor specializing in both stock markets and forex trading, your task is to provide a trading recommendation for the TSLA stock based on the following information:
+
+---
+
+Sentiment Analysis:
+- Current sentiment: neutral
+- Recent sentiment history: 
+
+---
+
+Time frame:
+- The trading strategy is based on a 30 minutes time frame.
+
+---
+
+Trading strategy:
+
+This conservative trading strategy prioritizes capital preservation and steady growth over high-risk, high-reward opportunities. Key points:
+
+1. Focus on long-term trends rather than short-term fluctuations
+2. Prioritize assets with stable histories and strong fundamentals
+3. Implement wider stop-losses to avoid premature exits due to market noise
+4. Prefer dividend-paying stocks or carry trades in forex
+5. Diversify positions to spread risk
+6. Avoid excessive leverage
+7. Look for value investing opportunities in stocks
+8. In forex, focus on major currency pairs with lower volatility
+
+When applying this strategy, lean towards more cautious actions, with a preference for holding positions unless there's a strong indication to buy or sell.
+
+
+---
+
+Asset data:
+
+{"symbol": "TSLA", "quote": {"current_price": 260.46, "change": 6.24, "percent_change": 2.4546, "high": 260.6999, "low": 254.12, "open": 257.375, "previous_close": 254.22, "timestamp": 1727481600}, "profile": {"name": "Tesla Inc", "exchange": "NASDAQ NMS - GLOBAL MARKET", "industry": "Automobiles", "market_cap": 832076.0375942889, "shares_outstanding": 3189.2}, "fetch_timestamp": "2024-09-28T14:51:07.850287"}
+
+---
+
+Analysis Instructions:
+
+- Evaluate the current sentiment and recent sentiment history in the context of the stock market.
+- Consider how the 30 minutes time frame aligns with the given trading strategy and current market conditions.
+- Analyze the provided asset data, paying attention to key metrics such as current price, volume, and any relevant ratios or indicators.
+- Assess how the asset's recent performance aligns with the overall market trends and sector-specific dynamics.
+- Determine if the current market conditions and asset data support the implementation of the given trading strategy.
+
+Based on your comprehensive analysis of all provided information, generate a clear trading recommendation: BUY, SELL, or HOLD.
+
+Output Format:
+RECOMMENDATION: [BUY/SELL/HOLD]
+
+Important: Provide only the recommendation as either BUY, SELL, or HOLD. Do not include any additional explanation or analysis in your output.
+
+- - - - - - - - - - - - -
+2024-09-28 14:51:09,000 - src.application.recommendation_engine - DEBUG - Recommendation: recommendation=<Recommendation.HOLD: 'hold'> confidence=0.75 intent='Maintain current position pending more clarity in long-term trends and sentiment shifts.'
+2024-09-28 14:51:09,000 - src.application.recommendation_engine - INFO - get_recommendation completed successfully
+2024-09-28 14:51:09,002 - __main__ - INFO - Application finished
+2024-09-28 14:51:09,003 - __main__ - INFO - main completed successfully
+2024-09-28 15:06:52,771 - __main__ - INFO - Calling main
+2024-09-28 15:06:52,771 - __main__ - INFO - Starting the application
+2024-09-28 15:06:52,778 - __main__ - DEBUG - Loaded 3 strategies
+2024-09-28 15:07:23,562 - src.application.sentiment_analyzer - INFO - Calling analyze_sentiment
+2024-09-28 15:07:23,562 - src.application.sentiment_analyzer - INFO - Analyzing sentiment for GOOGL
+2024-09-28 15:07:23,565 - src.application.sentiment_analyzer - DEBUG - Prompt: You are an expert financial analyst with deep knowledge of both stock markets. Your task is to analyze the current sentiment for the GOOGL AssetType.STOCK over the 45 minutes time frame.
+
+You have to check the investopedia and yahoo finance for the latest news and trends related to this stock in 2024-09-28.
+
+Consider the following factors in your analysis:
+
+1. Recent price movements
+2. Trading volume
+3. Relevant news and events
+4. Market trends
+5. Economic indicators (if applicable)
+6. Technical analysis patterns
+
+Based on these factors, determine whether the overall sentiment for GOOGL is positive, neutral, or negative.
+
+Provide your analysis in the following format:
+SENTIMENT: [POSITIVE/NEUTRAL/NEGATIVE]
+
+Remember, only output the sentiment as either POSITIVE, NEUTRAL, or NEGATIVE. Do not provide any additional explanation or analysis.
+
+2024-09-28 15:07:24,838 - src.application.sentiment_analyzer - DEBUG - Sentiment: Sentiment.NEUTRAL
+2024-09-28 15:07:24,838 - src.application.sentiment_analyzer - INFO - analyze_sentiment completed successfully
+2024-09-28 15:07:24,838 - src.application.recommendation_engine - INFO - Calling get_recommendation
+2024-09-28 15:07:24,838 - src.application.recommendation_engine - INFO - Preparing to generate recommendation
+2024-09-28 15:07:24,839 - src.data.external.fetcher - DEBUG - Calling fetch_asset_data
+2024-09-28 15:07:24,839 - src.data.external.fetcher - INFO - Fetching stock data for GOOGL
+2024-09-28 15:07:24,839 - src.data.external.fetcher - DEBUG - Fetching quote for GOOGL
+2024-09-28 15:07:25,112 - src.data.external.fetcher - DEBUG - Quote data: {'c': 163.95, 'd': 1.22, 'dp': 0.7497, 'h': 165.7, 'l': 162.6261, 'o': 162.81, 'pc': 162.73, 't': 1727481600}
+2024-09-28 15:07:25,113 - src.data.external.fetcher - DEBUG - Fetching company profile for GOOGL
+2024-09-28 15:07:25,259 - src.data.external.fetcher - DEBUG - Company profile data: {'country': 'US', 'currency': 'USD', 'estimateCurrency': 'USD', 'exchange': 'NASDAQ NMS - GLOBAL MARKET', 'finnhubIndustry': 'Media', 'ipo': '2004-08-19', 'logo': 'https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/GOOG.png', 'marketCapitalization': 2024414.0396727172, 'name': 'Alphabet Inc', 'phone': '16502530000', 'shareOutstanding': 12310, 'ticker': 'GOOGL', 'weburl': 'https://abc.xyz/'}
+2024-09-28 15:07:25,260 - src.data.external.fetcher - DEBUG - fetch_asset_data completed successfully
+2024-09-28 15:07:25,260 - src.data.repository.asset_data - DEBUG - Calling save_asset_data
+2024-09-28 15:07:25,260 - src.data.repository.asset_data - DEBUG - Saving asset data for GOOGL
+2024-09-28 15:07:25,262 - src.data.repository.asset_data - DEBUG - save_asset_data completed successfully
+2024-09-28 15:07:25,262 - src.data.repository.sentiment - DEBUG - Calling get_sentiment_history
+2024-09-28 15:07:25,263 - src.data.repository.sentiment - DEBUG - Getting sentiment history for GOOGL
+2024-09-28 15:07:25,263 - src.data.repository.sentiment - DEBUG - get_sentiment_history completed successfully
+2024-09-28 15:07:25,263 - src.application.recommendation_engine - DEBUG - - - - Formatted prompt - - -
+As an expert financial advisor specializing in both stock markets and forex trading, your task is to provide a trading recommendation for the GOOGL stock based on the following information:
+
+---
+
+Sentiment Analysis:
+- Current sentiment: neutral
+- Recent sentiment history: 
+
+---
+
+Time frame:
+- The trading strategy is based on a 45 minutes time frame.
+
+---
+
+Trading strategy:
+
+This conservative trading strategy prioritizes capital preservation and steady growth over high-risk, high-reward opportunities. Key points:
+
+1. Focus on long-term trends rather than short-term fluctuations
+2. Prioritize assets with stable histories and strong fundamentals
+3. Implement wider stop-losses to avoid premature exits due to market noise
+4. Prefer dividend-paying stocks or carry trades in forex
+5. Diversify positions to spread risk
+6. Avoid excessive leverage
+7. Look for value investing opportunities in stocks
+8. In forex, focus on major currency pairs with lower volatility
+
+When applying this strategy, lean towards more cautious actions, with a preference for holding positions unless there's a strong indication to buy or sell.
+
+
+---
+
+Asset data:
+
+{"symbol": "GOOGL", "quote": {"current_price": 163.95, "change": 1.22, "percent_change": 0.7497, "high": 165.7, "low": 162.6261, "open": 162.81, "previous_close": 162.73, "timestamp": 1727481600}, "profile": {"name": "Alphabet Inc", "exchange": "NASDAQ NMS - GLOBAL MARKET", "industry": "Media", "market_cap": 2024414.0396727172, "shares_outstanding": 12310.0}, "fetch_timestamp": "2024-09-28T15:07:25.260117"}
+
+---
+
+Analysis Instructions:
+
+- Evaluate the current sentiment and recent sentiment history in the context of the stock market.
+- Consider how the 45 minutes time frame aligns with the given trading strategy and current market conditions.
+- Analyze the provided asset data, paying attention to key metrics such as current price, volume, and any relevant ratios or indicators.
+- Assess how the asset's recent performance aligns with the overall market trends and sector-specific dynamics.
+- Determine if the current market conditions and asset data support the implementation of the given trading strategy.
+
+Based on your comprehensive analysis of all provided information, generate a clear trading recommendation: BUY, SELL, or HOLD.
+
+Output Format:
+RECOMMENDATION: [BUY/SELL/HOLD]
+
+Important: Provide only the recommendation as either BUY, SELL, or HOLD. Do not include any additional explanation or analysis in your output.
+
+- - - - - - - - - - - - -
+2024-09-28 15:07:26,192 - src.application.recommendation_engine - DEBUG - Recommendation: recommendation=<Recommendation.HOLD: 'hold'> confidence=0.7 intent='The current market conditions and neutral sentiment do not strongly indicate a need to change position, aligning with the conservative nature of the strategy.'
+2024-09-28 15:07:26,193 - src.application.recommendation_engine - INFO - get_recommendation completed successfully
+2024-09-28 15:07:26,196 - __main__ - INFO - Application finished
+2024-09-28 15:07:26,196 - __main__ - INFO - main completed successfully
+2024-09-28 15:57:15,765 - __main__ - INFO - Calling main
+2024-09-28 15:57:15,765 - __main__ - INFO - Starting the application
+2024-09-28 15:57:15,773 - __main__ - DEBUG - Loaded 3 strategies
+2024-09-28 15:57:18,392 - __main__ - ERROR - User input is invalid
+2024-09-28 15:57:18,392 - __main__ - INFO - main completed successfully
