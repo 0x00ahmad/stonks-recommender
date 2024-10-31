@@ -4,7 +4,7 @@ This is the v0.0.0-alpha01 version of what is going to be a trading llm.
 
 ---
 
-Steps to run:
+## Run it yourself:
 
 Before you proceed, create a `.env` file in the root directory of the project and add the following variables:
 
